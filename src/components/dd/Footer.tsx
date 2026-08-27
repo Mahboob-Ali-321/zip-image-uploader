@@ -1,5 +1,5 @@
 import { navLinks, site, telHref } from "@/lib/site";
-import { Icon, Stars, type IconName } from "./icons";
+import { Icon, Stars, type IconName } from "@/components/dd/icons";
 import { Reveal } from "./Reveal";
 
 const socialIcons: Record<string, IconName> = {

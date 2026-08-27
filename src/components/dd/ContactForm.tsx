@@ -1,8 +1,7 @@
-"use client";
 
 import { useState } from "react";
 import { site, telHref, whatsappHref } from "@/lib/site";
-import { Icon } from "./icons";
+import { Icon } from "@/components/dd/icons";
 
 type Status = "idle" | "sending" | "sent" | "fallback";
 

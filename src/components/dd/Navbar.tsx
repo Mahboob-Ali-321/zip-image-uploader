@@ -1,10 +1,9 @@
-"use client";
 
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { ease } from "@/lib/motion";
 import { navLinks, site, telHref, whatsappHref } from "@/lib/site";
-import { Icon } from "./icons";
+import { Icon } from "@/components/dd/icons";
 
 /**
  * Sticky masthead. Transparent over the hero image, then settles onto blurred

@@ -11,7 +11,7 @@ export const site = {
   nameHindi: "डेकोड्रीम्स",
   tagline: "We Decor Your Dreams",
   founders: "Hemant & Kartik Ramdiya",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://decodreams.in",
+  url: "https://decodreams.in",
 
   /** Digits only, with country code — used to build tel: and wa.me links. */
   phone: "919111621411",

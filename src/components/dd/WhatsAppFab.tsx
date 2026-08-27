@@ -1,10 +1,9 @@
-"use client";
 
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { duration, ease } from "@/lib/motion";
 import { whatsappHref } from "@/lib/site";
-import { Icon } from "./icons";
+import { Icon } from "@/components/dd/icons";
 
 /**
  * Mobile WhatsApp shortcut.

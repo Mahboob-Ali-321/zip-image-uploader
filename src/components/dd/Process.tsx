@@ -1,9 +1,8 @@
-"use client";
 
 import { motion } from "framer-motion";
 import { ease, inView } from "@/lib/motion";
 import { processSteps } from "@/lib/process";
-import { Icon } from "./icons";
+import { Icon } from "@/components/dd/icons";
 import { Reveal, RevealGroup, RevealItem } from "./Reveal";
 
 /**

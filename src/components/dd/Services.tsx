@@ -1,5 +1,5 @@
 import { services } from "@/lib/services";
-import { Icon } from "./icons";
+import { Icon } from "@/components/dd/icons";
 import { Reveal, RevealGroup, RevealItem } from "./Reveal";
 
 /**

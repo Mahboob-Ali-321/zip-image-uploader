@@ -1,9 +1,8 @@
-"use client";
 
 import { useRef } from "react";
 import { site } from "@/lib/site";
 import { testimonials } from "@/lib/testimonials";
-import { Icon, Stars } from "./icons";
+import { Icon, Stars } from "@/components/dd/icons";
 import { Reveal } from "./Reveal";
 
 /**

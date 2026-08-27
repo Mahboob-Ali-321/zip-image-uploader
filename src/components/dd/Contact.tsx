@@ -1,6 +1,6 @@
 import { site, telHref, whatsappHref } from "@/lib/site";
 import { ContactForm } from "./ContactForm";
-import { Icon, type IconName } from "./icons";
+import { Icon, type IconName } from "@/components/dd/icons";
 import { Reveal } from "./Reveal";
 
 /**

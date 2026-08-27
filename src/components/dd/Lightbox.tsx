@@ -1,4 +1,3 @@
-"use client";
 
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
@@ -6,7 +5,7 @@ import { ease } from "@/lib/motion";
 import type { Project } from "@/lib/projects";
 import { Frame } from "./Frame";
 import { Media } from "./Media";
-import { Icon } from "./icons";
+import { Icon } from "@/components/dd/icons";
 
 /**
  * Project viewer.

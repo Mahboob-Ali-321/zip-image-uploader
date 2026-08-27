@@ -1,4 +1,3 @@
-"use client";
 
 import { motion } from "framer-motion";
 import type { ReactNode } from "react";
@@ -7,7 +6,7 @@ import { ease } from "@/lib/motion";
 import { site } from "@/lib/site";
 import { Frame } from "./Frame";
 import { Media } from "./Media";
-import { Icon, Stars } from "./icons";
+import { Icon, Stars } from "@/components/dd/icons";
 
 /** A line of the headline rising through a mask. */
 function Line({ children, delay }: { children: ReactNode; delay: number }) {

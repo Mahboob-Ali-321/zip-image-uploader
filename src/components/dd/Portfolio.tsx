@@ -1,4 +1,3 @@
-"use client";
 
 import { AnimatePresence, motion } from "framer-motion";
 import { useMemo, useState } from "react";
@@ -7,7 +6,7 @@ import { categories, projects, type Category } from "@/lib/projects";
 import { Frame } from "./Frame";
 import { Lightbox } from "./Lightbox";
 import { Media } from "./Media";
-import { Icon } from "./icons";
+import { Icon } from "@/components/dd/icons";
 import { Reveal } from "./Reveal";
 
 /**
