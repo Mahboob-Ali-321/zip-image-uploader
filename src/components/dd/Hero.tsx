@@ -49,7 +49,7 @@ export function Hero() {
           label="Decodreams · Interiors"
           sizes="100vw"
           priority
-          quality={85}
+
           className="object-cover"
         />
       </motion.div>
