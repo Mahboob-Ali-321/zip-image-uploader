@@ -1,19 +1,30 @@
 /**
- * Image sources.
- *
- * Placeholder photography is pulled from Unsplash so the site looks finished
- * from the first load. To swap in Decodreams' own photos: drop files into
- * /public/images and replace the helper calls below (and in projects.ts) with
- * plain paths like "/images/nipania-duplex-01.jpg". Nothing else changes.
+ * Image sources — Decodreams' own photography, served from the CDN.
  */
+import d1 from "@/assets/d1.jpg.asset.json";
+import d2 from "@/assets/d2.jpg.asset.json";
+import d3 from "@/assets/d3.jpg.asset.json";
+import d4 from "@/assets/d4.jpg.asset.json";
+import d5 from "@/assets/d5.jpg.asset.json";
+import d6 from "@/assets/d6.jpg.asset.json";
+import d7 from "@/assets/d7.jpg.asset.json";
+import d8 from "@/assets/d8.jpg.asset.json";
+import d9 from "@/assets/d9.webp.asset.json";
 
-/** Builds an Unsplash source URL. Next.js handles the resizing from here. */
-export function unsplash(id: string, w = 1800) {
-  return `https://images.unsplash.com/${id}?auto=format&fit=crop&w=${w}&q=80`;
-}
+export const photos = {
+  chesterfieldLiving: d5.url,
+  jewelleryShowroom: d2.url,
+  entryConsole: d3.url,
+  navyBedroom: d4.url,
+  galleryWallLiving: d6.url,
+  doubleHeightLobby: d7.url,
+  studioBedroom: d8.url,
+  compactBedroom: d9.url,
+  roundCoveLiving: d1.url,
+} as const;
 
-/** Full-bleed hero. Warm evening light, low furniture, one lamp. */
-export const heroImage = unsplash("photo-1524758631624-e2822e304c36", 2400);
+/** Full-bleed hero. */
+export const heroImage = photos.chesterfieldLiving;
 
-/** Portrait-ish detail shot beside the studio story. */
-export const studioImage = unsplash("photo-1493809842364-78817add7ffb", 1400);
+/** Portrait detail shot beside the studio story. */
+export const studioImage = photos.entryConsole;
