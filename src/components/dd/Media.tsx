@@ -1,16 +1,7 @@
-
-import Image from "next/image";
 import { useState } from "react";
 
 /**
- * Image with a graceful failure state.
- *
- * The portfolio runs on placeholder photography until Decodreams' own photos
- * are in. If any source ever fails to load — a moved file, a blocked network,
- * a retired Unsplash ID — this renders a warm material block with the caption
- * instead of a broken image or a white hole in the layout.
- *
- * Always used with `fill`, so the parent needs `position: relative` and a size.
+ * Image with a graceful failure state. Always fills its (positioned) parent.
  */
 export function Media({
   src,
@@ -20,7 +11,6 @@ export function Media({
   sizes = "100vw",
   priority = false,
   className = "",
-  quality,
 }: {
   src: string;
   alt: string;
@@ -28,7 +18,6 @@ export function Media({
   sizes?: string;
   priority?: boolean;
   className?: string;
-  quality?: number;
 }) {
   const [failed, setFailed] = useState(false);
 
@@ -49,14 +38,13 @@ export function Media({
   }
 
   return (
-    <Image
+    <img
       src={src}
       alt={alt}
-      fill
       sizes={sizes}
-      priority={priority}
-      quality={quality}
-      className={className}
+      loading={priority ? "eager" : "lazy"}
+      decoding={priority ? "sync" : "async"}
+      className={`absolute inset-0 h-full w-full object-cover ${className}`}
       onError={() => setFailed(true)}
     />
   );
