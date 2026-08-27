@@ -144,7 +144,7 @@ export function Lightbox({
             transition={{ duration: 0.45, ease }}
           >
             <Media
-              src={project.images[index]}
+              src={project.images[index] ?? ""}
               alt={`${project.title}, ${project.locality} — photograph ${index + 1} of ${total}`}
               label={project.title}
               sizes="(min-width: 1024px) 80vw, 100vw"

@@ -125,7 +125,7 @@ export function Portfolio() {
                     }`}
                   >
                     <Media
-                      src={project.images[0]}
+                      src={project.images[0] ?? ""}
                       alt={`${project.title} — ${project.scope} in ${project.locality}`}
                       label={project.title}
                       sizes={
