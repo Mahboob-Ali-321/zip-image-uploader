@@ -26,7 +26,7 @@ export function Testimonials() {
       <div className="shell">
         <div className="grid gap-12 lg:grid-cols-12 lg:gap-16">
           {/* Rating summary */}
-          <Reveal className="lg:col-span-4">
+          <Reveal className="min-w-0 lg:col-span-4">
             <p className="eyebrow">Client reviews</p>
             <h2 className="display-lg mt-7 text-limewash">
               What people say afterwards.
@@ -66,7 +66,7 @@ export function Testimonials() {
           </Reveal>
 
           {/* Track */}
-          <div className="lg:col-span-8">
+          <div className="min-w-0 lg:col-span-8">
             <div
               ref={trackRef}
               className="flex snap-x snap-mandatory gap-5 overflow-x-auto pb-2 no-scrollbar"
